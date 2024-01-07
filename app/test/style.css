@@ -1,0 +1,11 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    font-family: monospace;
+    font-size: 140%;
+  }
+  p {
+    color: black;
+  }
