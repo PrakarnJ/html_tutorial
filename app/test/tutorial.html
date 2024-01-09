@@ -3,11 +3,33 @@
   <head>
     <title>PrakarnJ Tutorial</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      </style>
   </head>
   <body style="background-color: powderblue;">
-    <h1 style="background-color: darkslategray; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Prakarn Jaroonsorn</h1>
+    <h1 id="Title" style="background-color: darkslategray; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Prakarn Jaroonsorn</h1>
     <p style="background-color: tomato; font-family: 'Courier New', Courier, monospace; font-size: 150%; text-align: center;">My first paragraph.</p>
-    <h2 style="background-color: bisque; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">Position: Robotics Eng.</h2>
+    <h2 style="background-color: bisque; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">Position: Robotics Software Engineer</h2>
     <b>This is a </b>
     <a href="https://arv.co.th/"> ARV <br></a>
     <img src="Arv-Logo.jpg" alt="arv" width="320" height="240">
@@ -57,5 +79,32 @@
     <button onclick="document.location='titan.jpeg'">attack_on_titan</button>
     <br>
     <a href="mailto:prakarn24_tae@hotmail.com">Send email to Prakarn J</a>
+    <h2>Link Button</h2>
+    <p>A link styled as a button:</p>
+    <a href="titan.jpeg" target="_blank">This is a link <br></a>
+    <a href="#Title">Jump to Title <br></a>
+    <a href="https://www.google.com" title="HOME">Back to Home <br></a>
+    <img src="coffeecup.jpeg" alt="coffeecup" usemap="#coffeemap" width="640" height="480">
+    <map name="coffeemap">
+      <area shape="circle" coords="320,400,100" href="coffeebean.jpeg" onclick="BeanFunction()">
+      <area shape="circle" coords="320,200,100" href="cup.jpeg" alt="cup" onclick="CupFunction()">
+    </map>
+    <script>
+      function BeanFunction(){
+        alert("You clicked the coffee bean");
+      }
+      function CupFunction(){
+        alert("You click the coffee cup");
+      }
+    </script>
+    <br>
+    <p style="background-image: url('titan.jpeg');">
+      Prakarn <br>
+      Jaroonsorn <br>
+      ............. <br>
+      ............. <br>
+      ............. <br>
+      ............. <br>
+    </p>
   </body>
 </html>
