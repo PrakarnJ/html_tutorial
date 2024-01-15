@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h2>HTML Forms</h2>
+    <form action="page2.html" autocomplete="on">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Prakarn"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Jaroonsorn"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h2>Radio Button</h2>
+
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+      <input type="radio" id="html" name="fab_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    </form>
+
+    <h2>Checkboxed</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+    <form action="page4.html">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label> <br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <form action="page4.html">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">volvo</option>
+        <option value="toyota">toyota</option>
+        <option value="honda" selected>honda</option>
+        <option value="mazda">mazda</option>
+        <option value="audi">audi</option>
+      </select>
+      <input type="submit">
+    </form>
+    <br>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <textarea name="message" id="" cols="30" rows="10">
+      The cat was playing in the garden.
+    </textarea>
+    <button type="button" onclick="alert('PrakarnJ handsome!')">Click Me!</button>
+    <h2>Grouping Form Data with Fieldset</h2>
+
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <h2>The datalist Element</h2>
+
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+    <form action="/action_page.php">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit">
+    </form>
+
+    <h2>The output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+
+    <form action="page4.html" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" name="a" value="50">
+      100+
+      <input type="number" id="b" name="b" value="50">
+      =
+      <output name="x" for="a b"></output>
+      <br><br>
+      <input type="submit">
+    </form>
+
+    <h2>Password field</h2>
+    <p>The <strong>input type="password"</strong> defines a password field:</p>
+
+    <form action="page1.html">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd"><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+    <h2>Show a Color Picker</h2>
+    <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+
+    <form action="page1.html">
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#ffffff">
+      <input type="submit" value="Submit">
+    </form>
+
+    <h2>Date Field</h2>
+    <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+
+    <form action="page1.html">
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

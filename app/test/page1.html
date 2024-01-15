@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PrakarnJ Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="arv-icon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Prakarn Jaroonsorn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: blue;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th {
+        background-color:darkslategrey;
+        text-align: left;
+        padding: 5px
+      }
+      tr:nth-child(even) {
+        background-color: #D6EEEE;
+      }
+      div {
+        background-color: #FFF4A3;
+      }
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+      .main {
+        text-align: center;
+      }
+      .note {
+        font-size: 120%;
+        color: red;
+      }
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+      </style>
+  </head>
+  <body style="background-color: powderblue;">
+    <h1 id="Title" style="background-color: darkslategray; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Prakarn Jaroonsorn</h1>
+    <p style="background-color: tomato; font-family: 'Courier New', Courier, monospace; font-size: 150%; text-align: center;">My first paragraph.</p>
+    <h2 style="background-color: bisque; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">Position: Robotics Software Engineer</h2>
+    <b>This is a </b>
+    <a href="https://arv.co.th/"> ARV <br></a>
+    <img src="Arv-Logo.jpg" alt="arv" width="320" height="240">
+    <p>This is a <br> paragraph with a line break.</p>
+    <p style="color:red;">This is a red paragraph.</p>
+    <b>This is text is bold <br></b>
+    <strong>This text is important! <br></strong>
+    <i>This text is italic <br></i>
+    <em>This text is emphasized <br></em>
+    <small>This is some smaller text.</small>
+    <p>Do not forget to buy <mark>milk</mark> today. </p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is water formular H<sub>2</sub>O</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html" style="color:blueviolet">
+      For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF
+      works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver 
+      innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+    <p>WWF's goal is to: <q style="border: 2px solid tomato;">Build a future where people live in harmony with nature.</q></p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <address>
+      Written by John Doe. <br>
+      Visit us at: <br>
+      Example.com <br>
+      Box 564, Disneyland <br>
+      USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <!-- This is a comment -->
+    <!-- Remember to add more information here -->
+    <!-- <p>This is another paragraph</p> -->
+    <p>This <!--great text--> is a paragraph</p>
+    <h1 style="background-color: rgba(255, 99, 71, 0.5);">...</h1>
+    <p style="background-color: rgb(149, 212, 153);"> this is paragraph</p>
+    <a href="https://www.google.com/" target="_top">Visit Google <br></a>
+    <a href="https://www.google.com/" target="_blank">Visit Google new window <br></a>
+    <h2>Absolute URL</h2>
+    <p><a href="https://www.google.com/" title="visit google web page">Google</a></p>
+    <h2>Relative URLs</h2>
+     <a href="https://www.youtube.com/watch?v=OBqw818mQ1E" target="_blank">
+      <img src="titan.jpeg" alt="attack_on_titan" style="width: 320px;height: 200px;"><br>
+     </a>
+    <button onclick="document.location='titan.jpeg'">attack_on_titan</button>
+    <br>
+    <a href="mailto:prakarn24_tae@hotmail.com">Send email to Prakarn J</a>
+    <h2>Link Button</h2>
+    <p>A link styled as a button:</p>
+    <a href="titan.jpeg" target="_blank">This is a link <br></a>
+    <a href="#Title">Jump to Title <br></a>
+    <a href="https://www.google.com" title="HOME">Back to Home <br></a>
+    <img src="coffeecup.jpeg" alt="coffeecup" usemap="#coffeemap" width="640" height="480">
+    <map name="coffeemap">
+      <area shape="circle" coords="320,400,100" href="coffeebean.jpeg" onclick="BeanFunction()">
+      <area shape="circle" coords="320,200,100" href="cup.jpeg" alt="cup" onclick="CupFunction()">
+    </map>
+    <script>
+      function BeanFunction(){
+        alert("You clicked the coffee bean");
+      }
+      function CupFunction(){
+        alert("You click the coffee cup");
+      }
+    </script>
+    <br>
+    <p style="background-image: url('titan.jpeg');">
+      Prakarn <br>
+      Jaroonsorn <br>
+      ............. <br>
+      ............. <br>
+      ............. <br>
+      ............. <br>
+    </p>
+    <p><img src="titan.jpeg" alt="Titan_right" style="float:right;width: 160px;height: 120px;">
+    The image will float to the right of the text.</p>
+    <p><img src="titan.jpeg" alt="Titan_left" style="float:left;width: 160px;height:120px">
+    The image will float to the left of the text.</p>
+    <br>
+    <picture>
+      <source media="(min-width: 650px)" srcset="coffeebean.jpeg">
+      <source media="(min-width: 320px)" srcset="coffeecup.jpeg">
+      <img src="cup.jpeg">
+    </picture>
+    <table style="width: 30%;">
+      <colgroup>
+        <col span="2">
+        <col span="3" style="visibility: collapse;"/>
+      </colgroup>
+      <caption>Robotics Product</caption>
+      <tr>
+        <th style="width: 15%">Robot Name</th>
+        <th style="width: 15%;">Robot Type</th>
+        <th style="width: 10%;">Robot Cost</th>
+      </tr>
+      <tr>
+        <td>Ouranos</td>
+        <td>Ground Robot</td>
+        <td>$100000</td>
+      </tr>
+      <tr>
+        <td>Laika</td>
+        <td>Legged Robot</td>
+        <td>$4000000</td>
+      </tr>
+      <tr>
+        <td>Azzie</td>
+        <td>Ground Robot</td>
+        <td>$200000</td>
+      </tr>
+      <tr>
+        <td>Horrus</td>
+        <td>Drone</td>
+        <td>$50000</td>
+      </tr>
+      <tr>
+        <td>SCIM Cabinet v.1</td>
+        <td>Cabinet</td>
+        <td>$30000</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <!-- disc circle square none -->
+    <ul style="list-style-type:circle">
+      <li>coffee</li>
+      <li>milk</li>
+      <li>tea</li>
+    </ul>
+    <!-- 1 A a I i -->
+    <ol type="A">
+      <li>coffee</li>
+      <li>milk</li>
+      <li>tea</li>
+    </ol>
+    <dl>
+      <dt>coffee</dt>
+      <dd>- Black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- White cold drink</dd>
+    </dl>
+    <p>Hello World</p>
+    <div>Hello World</div>
+    <span>Hello World</span>
+    <div style="background-color:black;color:white;padding: 1px;">
+      <h2>London</h2>
+      <p>London is the capital city of England. 
+        It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+    <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has 
+      <span style="color: darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+    Lorem Ipsum <div> I am a div</div> dolor sit amet.
+    <div>
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London has over 13 million inhabitants.</p>
+    </div>
+    <div class="city main">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <div class="city">
+      <h2>Bangkok</h2>
+      <p>Bangkok is the capital of Thailand.</p>
+    </div>
+    <button onclick="document.location='page2.html'">Page 2</button>
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+
+    <button onclick="HideFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+      function HideFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+      }
+    </script>
+    <h2 id="myHeader">My Header</h2>
+    <a href="#Title">Jump to Title</a>
+    <a href="page2.html#p2">Jump to p2 in page2</a>
+
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+    <h1 id="myHeader2">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+      function displayResult() {
+        document.getElementById("myHeader2").innerHTML = "Have a nice day!";
+      }
+    </script>
+    <br>
+    <iframe src="Arv-Logo.jpg" style="height: 400px;width: 1000px;border:none" name="iframe_arv" title="Iframe ARV"></iframe>
+    <p><a href="titan.jpeg" target="iframe_arv">Titan</a></p>
+    <p><a href="Arv-Logo.jpg" target="iframe_arv">ARV</a></p>
+
+    <h1>My first JavaScript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+      Click me to display Date and Time.
+    </button>
+    <p id="demo"></p>
+
+    <h2>Use JavaScript to Change Text</h2>
+    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+    <p id="demo2"></p>
+    
+    <script>
+      document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <script>
+      function light(sw) {
+        var pic;
+        if (sw == 0) {
+          pic = "pic_bulboff.gif"
+        }
+        else {
+          pic = "pic_bulbon.gif"
+        }
+        document.getElementById('myImage').src = pic;
+      }
+    </script>
+
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+  </body>
+</html>
